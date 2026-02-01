@@ -86,8 +86,20 @@
             color: var(--white);
             text-align: center;
             align-items: center;
+            position: relative;
         }
         .cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/page1_img1.jpeg') center center / cover no-repeat;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .cover::after {
             content: '';
             position: absolute;
             top: 0;
@@ -1044,6 +1056,15 @@
             .result-label {
                 font-size: 12px !important;
             }
+            /* New results slide with image */
+            [style*="grid-template-columns: 1fr 1.2fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 24px !important;
+            }
+            [style*="grid-template-columns: 1fr 1.2fr"] img {
+                max-height: 250px !important;
+                object-fit: cover !important;
+            }
             /* Competition table - horizontal scroll */
             .compare-table {
                 display: block !important;
@@ -1365,8 +1386,8 @@
                 <div class="kpi-label">Basket Size</div>
             </div>
             <div class="kpi-item">
-                <div class="kpi-value">321K</div>
-                <div class="kpi-label">Active Community</div>
+                <div class="kpi-value">1.1M+</div>
+                <div class="kpi-label">Social Reach</div>
             </div>
         </div>
         <div style="margin-top: 32px; padding: 20px 28px; background: var(--gray-100); border-radius: 8px; text-align: center;">
@@ -1380,13 +1401,14 @@
         <div class="logo-top"><img src="thickfiber logo.png" alt="Thick Fiber"></div>
         <p class="section-tag">High-Margin Products</p>
         <h2>Simple SKUs. Premium margins. Easy sell.</h2>
-        <div class="grid-2">
+        <div class="grid-3">
             <div class="product-card">
-                <div class="product-header">
-                    <img src="https://www.thickfiber.ae/cdn/shop/files/25gm_Hair_Fiber.jpg" alt="Hair Fibers">
+                <div class="product-header" style="flex-direction: column; text-align: center;">
+                    <img src="images/page3_img1.jpeg" alt="Hair Building Fibers 25g" style="height: 180px; margin-bottom: 16px;">
                     <div class="product-info">
                         <div class="product-name">Hair Building Fibers</div>
                         <div class="product-price">Dhs. 70</div>
+                        <div style="font-size: 11px; color: var(--gray-500); margin-top: 6px;">Anti-Itch, No Wool, Wind & Sweat Resistant</div>
                     </div>
                 </div>
                 <div class="product-stats">
@@ -1396,7 +1418,7 @@
                     </div>
                     <div class="product-stat">
                         <div class="product-stat-value">30s</div>
-                        <div class="product-stat-label">Application</div>
+                        <div class="product-stat-label">Apply</div>
                     </div>
                     <div class="product-stat">
                         <div class="product-stat-value">25g</div>
@@ -1405,24 +1427,49 @@
                 </div>
             </div>
             <div class="product-card">
-                <div class="product-header">
-                    <img src="https://www.thickfiber.ae/cdn/shop/files/Deep_Dark_Brown_New_Bottle_Design.jpg" alt="Root Touch Up">
+                <div class="product-header" style="flex-direction: column; text-align: center;">
+                    <img src="images/page4_img1.jpeg" alt="Root Touch Up Powder" style="height: 180px; margin-bottom: 16px;">
                     <div class="product-info">
                         <div class="product-name">Root Touch Up Powder</div>
                         <div class="product-price">Dhs. 55</div>
+                        <div style="font-size: 11px; color: var(--gray-500); margin-top: 6px;">Water & Sweat Resistant Concealer</div>
                     </div>
                 </div>
                 <div class="product-stats">
                     <div class="product-stat">
-                        <div class="product-stat-value">13</div>
+                        <div class="product-stat-value">2</div>
                         <div class="product-stat-label">Colors</div>
                     </div>
                     <div class="product-stat">
                         <div class="product-stat-value">All Day</div>
-                        <div class="product-stat-label">Coverage</div>
+                        <div class="product-stat-label">Hold</div>
                     </div>
                     <div class="product-stat">
                         <div class="product-stat-value">4g</div>
+                        <div class="product-stat-label">Size</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-header" style="flex-direction: column; text-align: center;">
+                    <img src="images/page5_img1.jpeg" alt="Hair Spray" style="height: 180px; margin-bottom: 16px;">
+                    <div class="product-info">
+                        <div class="product-name">Fiber Hold Spray</div>
+                        <div class="product-price">Dhs. 45</div>
+                        <div style="font-size: 11px; color: var(--gray-500); margin-top: 6px;">48hr Hold, Fast Drying, Strong Hold</div>
+                    </div>
+                </div>
+                <div class="product-stats">
+                    <div class="product-stat">
+                        <div class="product-stat-value">48hr</div>
+                        <div class="product-stat-label">Lasting</div>
+                    </div>
+                    <div class="product-stat">
+                        <div class="product-stat-value">Fast</div>
+                        <div class="product-stat-label">Drying</div>
+                    </div>
+                    <div class="product-stat">
+                        <div class="product-stat-value">250ml</div>
                         <div class="product-stat-label">Size</div>
                     </div>
                 </div>
@@ -1464,30 +1511,31 @@
         <div class="logo-top"><img src="thickfiber logo.png" alt="Thick Fiber"></div>
         <p class="section-tag">Why Customers Love It</p>
         <h2>Instant results = instant sales. See the transformation.</h2>
-        <div class="results-grid">
-            <div class="result-card">
-                <div class="result-images">
-                    <div class="result-placeholder before">Before</div>
-                    <div class="result-placeholder after">After</div>
-                </div>
-                <div class="result-label">Hair Building Fibers</div>
+        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center;">
+            <div>
+                <img src="images/page2_img1.jpeg" alt="Thick Fiber Model" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-xl);">
             </div>
-            <div class="result-card">
-                <div class="result-images">
-                    <div class="result-placeholder before">Before</div>
-                    <div class="result-placeholder after">After</div>
+            <div>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="padding: 24px; background: var(--gray-50); border-radius: 12px; border-left: 4px solid var(--brand-red);">
+                        <div style="font-size: 48px; font-weight: 800; color: var(--brand-red); margin-bottom: 8px;">30s</div>
+                        <div style="font-size: 16px; font-weight: 600; color: var(--gray-700);">Application Time</div>
+                        <div style="font-size: 13px; color: var(--gray-500); margin-top: 4px;">Quick application that fits any routine</div>
+                    </div>
+                    <div style="padding: 24px; background: var(--gray-50); border-radius: 12px; border-left: 4px solid var(--brand-red);">
+                        <div style="font-size: 48px; font-weight: 800; color: var(--brand-red); margin-bottom: 8px;">24hrs</div>
+                        <div style="font-size: 16px; font-weight: 600; color: var(--gray-700);">All-Day Hold</div>
+                        <div style="font-size: 13px; color: var(--gray-500); margin-top: 4px;">Wind & sweat resistant formula</div>
+                    </div>
+                    <div style="padding: 24px; background: var(--gray-50); border-radius: 12px; border-left: 4px solid var(--brand-red);">
+                        <div style="font-size: 48px; font-weight: 800; color: var(--brand-red); margin-bottom: 8px;">100%</div>
+                        <div style="font-size: 16px; font-weight: 600; color: var(--gray-700);">Natural Ingredients</div>
+                        <div style="font-size: 13px; color: var(--gray-500); margin-top: 4px;">Anti-itch, no wool fibers</div>
+                    </div>
                 </div>
-                <div class="result-label">Root Touch Up</div>
-            </div>
-            <div class="result-card">
-                <div class="result-images">
-                    <div class="result-placeholder before">Before</div>
-                    <div class="result-placeholder after">After</div>
-                </div>
-                <div class="result-label">Full Coverage</div>
             </div>
         </div>
-        <div style="margin-top: 40px; padding: 24px 32px; background: var(--gray-100); border-radius: 8px;">
+        <div style="margin-top: 32px; padding: 24px 32px; background: var(--gray-100); border-radius: 8px;">
             <div style="font-size: 16px; font-weight: 600; color: var(--gray-700); text-align: center;">"30 seconds to confidence" — That's why 3,000+ customers gave us 5-star reviews and keep coming back every 30 days.</div>
         </div>
         <div class="slide-number">07 / 13</div>
@@ -1650,8 +1698,8 @@
                 <div class="partner-grid">
                     <div class="partner-item"><span class="partner-check">✓</span> Free POS displays & signage</div>
                     <div class="partner-item"><span class="partner-check">✓</span> Staff training (we come to you)</div>
-                    <div class="partner-item"><span class="partner-check">✓</span> 321K social media promotion</div>
-                    <div class="partner-item"><span class="partner-check">✓</span> 228K YouTube audience</div>
+                    <div class="partner-item"><span class="partner-check">✓</span> 1.1M+ social media reach</div>
+                    <div class="partner-item"><span class="partner-check">✓</span> 850K TikTok + 220K YouTube</div>
                     <div class="partner-item"><span class="partner-check">✓</span> Launch campaign support</div>
                     <div class="partner-item"><span class="partner-check">✓</span> 24-48hr Dubai restocking</div>
                 </div>
@@ -1727,11 +1775,15 @@
             </div>
             <div class="contact-item">
                 <div class="contact-label">YouTube</div>
-                <a href="https://www.youtube.com/@ThickFiber" class="contact-value">228K Subscribers</a>
+                <a href="https://www.youtube.com/@ThickFiber" class="contact-value">220K+ Subscribers</a>
+            </div>
+            <div class="contact-item">
+                <div class="contact-label">TikTok</div>
+                <a href="https://www.tiktok.com/@thickfiber" class="contact-value">850K+ Followers</a>
             </div>
             <div class="contact-item">
                 <div class="contact-label">Instagram</div>
-                <a href="https://www.instagram.com/thick.fiber" class="contact-value">93K Followers</a>
+                <a href="https://www.instagram.com/thick.fiber" class="contact-value">61K+ Followers</a>
             </div>
         </div>
         <div class="slide-number">13 / 13</div>
