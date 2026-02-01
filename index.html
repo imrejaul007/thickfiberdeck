@@ -835,77 +835,376 @@
             .results-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
-            .slide { padding: 100px 24px 60px 24px; }
-            .slide h2 { font-size: 26px; margin-bottom: 32px; letter-spacing: -0.5px; }
-            .section-tag { font-size: 10px; margin-bottom: 12px; }
-            .logo-top { top: 24px; left: 24px; height: 18px; }
-            .slide-number { bottom: 24px; right: 24px; font-size: 11px; }
-            .cover { padding-top: 80px; }
-            .cover-logo { height: 40px; margin-bottom: 32px; }
-            .cover h1 { font-size: 11px; letter-spacing: 2px; margin-bottom: 16px; }
-            .cover-headline { font-size: 28px; margin-bottom: 48px; letter-spacing: -1px; }
-            .cover-metrics { grid-template-columns: repeat(2, 1fr); }
-            .cover-metric { padding: 20px 16px; }
-            .cover-metric-value { font-size: 28px; }
-            .cover-metric-label { font-size: 9px; }
-            .data-grid { grid-template-columns: 1fr; gap: 16px; }
-            .data-card { padding: 24px; }
-            .data-value { font-size: 40px; }
-            .data-label { font-size: 13px; }
-            .grid-2, .grid-3, .partner-grid { grid-template-columns: 1fr; }
-            .market-data { grid-template-columns: 1fr; gap: 32px; }
-            .market-bar-track { height: 44px; }
-            .market-bar-fill { font-size: 13px; padding-left: 12px; }
-            .market-stat { padding: 20px; }
-            .market-stat-value { font-size: 28px; }
-            .traction-header { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-            .traction-card { padding: 20px 16px; }
-            .traction-value { font-size: 28px; }
-            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-            .kpi-item { padding: 20px 12px; }
-            .kpi-value { font-size: 20px; }
-            .product-card { padding: 24px; }
-            .product-header { flex-direction: column; gap: 20px; }
-            .product-header img { height: 120px; }
-            .product-price { font-size: 26px; }
-            .why-card { padding: 28px; }
-            .why-metric { font-size: 48px; }
-            .why-title { font-size: 16px; }
-            .why-desc { font-size: 13px; }
-            .results-grid { grid-template-columns: 1fr; }
-            .result-placeholder { height: 140px; }
-            .compare-table th, .compare-table td { padding: 12px 10px; font-size: 12px; }
-            .region-card { padding: 24px; }
-            .region-name { font-size: 16px; }
-            .region-revenue { font-size: 22px; }
-            .channel-tag { padding: 6px 10px; font-size: 9px; }
-            .partner-section { padding: 28px; }
-            .partner-title { font-size: 16px; margin-bottom: 20px; }
-            .partner-item { padding: 12px 14px; font-size: 13px; }
-            .ask-card { padding: 32px 24px; }
-            .ask-title { font-size: 18px; margin-bottom: 24px; }
-            .ask-item { gap: 14px; }
-            .ask-number { width: 36px; height: 36px; font-size: 14px; }
-            .ask-text { font-size: 15px; }
-            .cta-button { padding: 16px 32px; font-size: 12px; margin-top: 32px; }
-            .thankyou h2 { font-size: 36px; }
-            .summary-grid { grid-template-columns: repeat(2, 1fr); }
-            .summary-item { padding: 24px 16px; }
-            .summary-value { font-size: 24px; }
-            .contact-row { flex-direction: column; gap: 24px; }
-            .highlight-bar { padding: 20px 24px; font-size: 14px; }
+            /* Base slide - remove 100vh, use auto height */
+            .slide {
+                min-height: auto !important;
+                padding: 80px 20px 60px 20px !important;
+            }
+            .slide h2 {
+                font-size: 24px !important;
+                margin-bottom: 24px !important;
+                letter-spacing: -0.5px !important;
+                line-height: 1.2 !important;
+            }
+            .section-tag {
+                font-size: 9px !important;
+                margin-bottom: 10px !important;
+                letter-spacing: 1.5px !important;
+            }
+            /* Logo - make it smaller and static position friendly */
+            .logo-top {
+                position: absolute !important;
+                top: 20px !important;
+                left: 20px !important;
+                height: 16px !important;
+            }
+            .slide-number {
+                position: relative !important;
+                bottom: auto !important;
+                right: auto !important;
+                text-align: center !important;
+                margin-top: 40px !important;
+                font-size: 11px !important;
+            }
+            /* Cover slide */
+            .cover {
+                padding: 60px 20px 40px 20px !important;
+                min-height: 100vh !important;
+            }
+            .cover-logo {
+                height: 36px !important;
+                margin-bottom: 24px !important;
+            }
+            .cover h1 {
+                font-size: 10px !important;
+                letter-spacing: 2px !important;
+                margin-bottom: 12px !important;
+            }
+            .cover-headline {
+                font-size: 26px !important;
+                margin-bottom: 32px !important;
+                letter-spacing: -0.5px !important;
+                line-height: 1.2 !important;
+            }
+            .cover-metrics {
+                grid-template-columns: 1fr 1fr !important;
+                width: 100% !important;
+            }
+            .cover-metric {
+                padding: 16px 12px !important;
+            }
+            .cover-metric-value {
+                font-size: 24px !important;
+            }
+            .cover-metric-label {
+                font-size: 8px !important;
+                letter-spacing: 0.5px !important;
+            }
+            /* Data cards */
+            .data-grid {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+            .data-card {
+                padding: 20px !important;
+            }
+            .data-value {
+                font-size: 36px !important;
+            }
+            .data-label {
+                font-size: 12px !important;
+            }
+            .data-sublabel {
+                font-size: 11px !important;
+            }
+            /* Grids */
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            /* Market slide */
+            .market-data {
+                grid-template-columns: 1fr !important;
+                gap: 24px !important;
+                margin-top: 24px !important;
+            }
+            .market-bar-item {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 8px !important;
+            }
+            .market-bar-label {
+                width: auto !important;
+                font-size: 11px !important;
+            }
+            .market-bar-track {
+                width: 100% !important;
+                height: 40px !important;
+            }
+            .market-bar-fill {
+                font-size: 11px !important;
+                padding-left: 10px !important;
+            }
+            .market-stat {
+                padding: 16px !important;
+            }
+            .market-stat-value {
+                font-size: 24px !important;
+            }
+            .market-stat-label {
+                font-size: 11px !important;
+            }
+            /* Traction */
+            .traction-header {
+                grid-template-columns: 1fr 1fr !important;
+                gap: 10px !important;
+                margin-bottom: 20px !important;
+            }
+            .traction-card {
+                padding: 16px 12px !important;
+            }
+            .traction-value {
+                font-size: 24px !important;
+            }
+            .traction-label {
+                font-size: 9px !important;
+            }
+            .kpi-grid {
+                grid-template-columns: 1fr 1fr !important;
+            }
+            .kpi-item {
+                padding: 16px 10px !important;
+                border-right: none !important;
+                border-bottom: 1px solid var(--gray-200) !important;
+            }
+            .kpi-value {
+                font-size: 18px !important;
+            }
+            .kpi-label {
+                font-size: 8px !important;
+            }
+            /* Products */
+            .product-card {
+                padding: 20px !important;
+            }
+            .product-header {
+                flex-direction: column !important;
+                gap: 16px !important;
+                align-items: center !important;
+                text-align: center !important;
+            }
+            .product-header img {
+                height: 100px !important;
+            }
+            .product-name {
+                font-size: 18px !important;
+            }
+            .product-price {
+                font-size: 24px !important;
+                margin-bottom: 16px !important;
+            }
+            .product-stats {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 8px !important;
+            }
+            .product-stat {
+                padding: 12px 8px !important;
+            }
+            .product-stat-value {
+                font-size: 16px !important;
+            }
+            .product-stat-label {
+                font-size: 8px !important;
+            }
+            /* Why cards */
+            .why-card {
+                padding: 24px !important;
+            }
+            .why-metric {
+                font-size: 40px !important;
+            }
+            .why-title {
+                font-size: 15px !important;
+            }
+            .why-desc {
+                font-size: 12px !important;
+            }
+            /* Results */
+            .results-grid {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            .result-card {
+                padding: 16px !important;
+            }
+            .result-placeholder {
+                height: 100px !important;
+                font-size: 10px !important;
+            }
+            .result-label {
+                font-size: 12px !important;
+            }
+            /* Competition table - horizontal scroll */
+            .compare-table {
+                display: block !important;
+                overflow-x: auto !important;
+                white-space: nowrap !important;
+                font-size: 11px !important;
+            }
+            .compare-table th,
+            .compare-table td {
+                padding: 10px 8px !important;
+                font-size: 10px !important;
+            }
+            /* Region cards */
+            .region-card {
+                padding: 20px !important;
+            }
+            .region-header {
+                flex-direction: column !important;
+                gap: 8px !important;
+                align-items: flex-start !important;
+            }
+            .region-name {
+                font-size: 14px !important;
+            }
+            .region-revenue {
+                font-size: 20px !important;
+            }
+            .channel-tag {
+                padding: 5px 8px !important;
+                font-size: 8px !important;
+            }
+            .highlight-bar {
+                padding: 16px 20px !important;
+                font-size: 12px !important;
+                margin-top: 20px !important;
+            }
+            /* Partnership */
+            .partner-section {
+                padding: 20px !important;
+            }
+            .partner-title {
+                font-size: 14px !important;
+                margin-bottom: 16px !important;
+                padding-bottom: 12px !important;
+            }
+            .partner-grid {
+                grid-template-columns: 1fr !important;
+                gap: 8px !important;
+            }
+            .partner-item {
+                padding: 10px 12px !important;
+                font-size: 12px !important;
+                gap: 10px !important;
+            }
+            .partner-check {
+                width: 18px !important;
+                height: 18px !important;
+                font-size: 10px !important;
+            }
+            /* Ask slide */
+            .ask-card {
+                padding: 24px 20px !important;
+                width: 100% !important;
+            }
+            .ask-title {
+                font-size: 16px !important;
+                margin-bottom: 20px !important;
+                padding-bottom: 16px !important;
+            }
+            .ask-list {
+                gap: 16px !important;
+            }
+            .ask-item {
+                gap: 12px !important;
+            }
+            .ask-number {
+                width: 32px !important;
+                height: 32px !important;
+                font-size: 12px !important;
+                border-radius: 6px !important;
+            }
+            .ask-text {
+                font-size: 13px !important;
+            }
+            .cta-button {
+                padding: 14px 28px !important;
+                font-size: 11px !important;
+                margin-top: 24px !important;
+            }
+            /* Thank you */
+            .thankyou-logo {
+                height: 32px !important;
+                margin-bottom: 20px !important;
+            }
+            .thankyou h2 {
+                font-size: 28px !important;
+            }
+            .thankyou-tagline {
+                font-size: 13px !important;
+                margin-bottom: 24px !important;
+            }
+            .summary-grid {
+                grid-template-columns: 1fr 1fr !important;
+                margin-bottom: 32px !important;
+            }
+            .summary-item {
+                padding: 20px 12px !important;
+            }
+            .summary-value {
+                font-size: 20px !important;
+            }
+            .summary-label {
+                font-size: 8px !important;
+            }
+            .contact-row {
+                flex-direction: column !important;
+                gap: 20px !important;
+            }
+            .contact-label {
+                font-size: 9px !important;
+            }
+            .contact-value {
+                font-size: 13px !important;
+            }
+            /* Inline style overrides */
+            [style*="margin-top: 40px"] {
+                margin-top: 24px !important;
+            }
+            [style*="padding: 24px 32px"] {
+                padding: 16px 20px !important;
+            }
+            [style*="font-size: 16px"],
+            [style*="font-size: 17px"] {
+                font-size: 13px !important;
+            }
+            [style*="font-size: 15px"] {
+                font-size: 12px !important;
+            }
         }
-        @media (max-width: 480px) {
-            .slide { padding: 90px 20px 50px 20px; }
-            .slide h2 { font-size: 22px; }
-            .logo-top { top: 20px; left: 20px; height: 16px; }
-            .cover-headline { font-size: 24px; }
-            .cover-metrics { grid-template-columns: 1fr 1fr; }
-            .cover-metric-value { font-size: 24px; }
-            .data-value { font-size: 36px; }
-            .traction-header { grid-template-columns: 1fr; }
-            .kpi-grid { grid-template-columns: 1fr 1fr; }
-            .summary-grid { grid-template-columns: 1fr 1fr; }
+        @media (max-width: 400px) {
+            .slide h2 {
+                font-size: 20px !important;
+            }
+            .cover-headline {
+                font-size: 22px !important;
+            }
+            .cover-metric-value {
+                font-size: 20px !important;
+            }
+            .data-value {
+                font-size: 32px !important;
+            }
+            .traction-header {
+                grid-template-columns: 1fr !important;
+            }
+            .why-metric {
+                font-size: 32px !important;
+            }
+            .summary-grid {
+                grid-template-columns: 1fr !important;
+            }
         }
         @media print {
             .slide { page-break-after: always; }
