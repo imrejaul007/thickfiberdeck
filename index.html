@@ -1065,6 +1065,25 @@
                 max-height: 250px !important;
                 object-fit: cover !important;
             }
+            /* Who We Are slide */
+            [style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            /* Social media advantage slide */
+            [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            [style*="font-size: 56px"] {
+                font-size: 36px !important;
+            }
+            [style*="font-size: 32px"] {
+                font-size: 24px !important;
+            }
+            [style*="font-size: 28px"] {
+                font-size: 20px !important;
+            }
             /* Competition table - horizontal scroll */
             .compare-table {
                 display: block !important;
@@ -1261,10 +1280,117 @@
                 <div class="cover-metric-label">Retail Competitors</div>
             </div>
         </div>
-        <div class="slide-number" style="color: var(--gray-600);">01 / 13</div>
+        <div class="slide-number" style="color: var(--gray-600);">01 / 15</div>
     </section>
 
-    <!-- SLIDE 2: PROBLEM -->
+    <!-- SLIDE 2: WHO WE ARE -->
+    <section class="slide">
+        <div class="logo-top"><img src="thickfiber logo.png" alt="Thick Fiber"></div>
+        <p class="section-tag">Who We Are</p>
+        <h2>Founded in 2018. Trusted by 8,000+ loyal subscribers worldwide.</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px;">
+            <div>
+                <div style="padding: 32px; background: var(--gray-50); border-radius: 12px; margin-bottom: 20px;">
+                    <div style="font-size: 14px; font-weight: 600; color: var(--brand-red); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Our Mission</div>
+                    <div style="font-size: 15px; color: var(--gray-700); line-height: 1.7;">Empowering individuals facing hair loss with natural, convenient, and effective solutions that restore confidence and freedom. 63% of men and 40% of women experience hair loss — we're here for all of them.</div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+                    <div style="padding: 20px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; text-align: center;">
+                        <div style="font-size: 32px; font-weight: 800; color: var(--brand-red);">#1</div>
+                        <div style="font-size: 10px; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">Best Seller India & UAE</div>
+                    </div>
+                    <div style="padding: 20px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; text-align: center;">
+                        <div style="font-size: 32px; font-weight: 800; color: var(--brand-red);">Top 3</div>
+                        <div style="font-size: 10px; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">USA & UK Amazon</div>
+                    </div>
+                    <div style="padding: 20px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; text-align: center;">
+                        <div style="font-size: 32px; font-weight: 800; color: var(--gray-900);">2018</div>
+                        <div style="font-size: 10px; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">Founded</div>
+                    </div>
+                    <div style="padding: 20px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; text-align: center;">
+                        <div style="font-size: 32px; font-weight: 800; color: var(--gray-900);">4</div>
+                        <div style="font-size: 10px; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">Countries Active</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="font-size: 14px; font-weight: 600; color: var(--brand-red); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;">Amazon Loyal Subscribers</div>
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                    <div style="display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px;">
+                        <div style="font-size: 28px; font-weight: 800; color: var(--gray-900); width: 80px;">4,000+</div>
+                        <div>
+                            <div style="font-size: 14px; font-weight: 600; color: var(--gray-700);">USA Amazon</div>
+                            <div style="font-size: 11px; color: var(--gray-500);">Subscribe & Save customers</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px;">
+                        <div style="font-size: 28px; font-weight: 800; color: var(--gray-900); width: 80px;">2,000+</div>
+                        <div>
+                            <div style="font-size: 14px; font-weight: 600; color: var(--gray-700);">UK Amazon</div>
+                            <div style="font-size: 11px; color: var(--gray-500);">Subscribe & Save customers</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px;">
+                        <div style="font-size: 28px; font-weight: 800; color: var(--gray-900); width: 80px;">2,000+</div>
+                        <div>
+                            <div style="font-size: 14px; font-weight: 600; color: var(--gray-700);">India Amazon</div>
+                            <div style="font-size: 11px; color: var(--gray-500);">Subscribe & Save customers</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 16px 20px; background: linear-gradient(145deg, var(--brand-red) 0%, var(--brand-red-dark) 100%); border-radius: 8px; color: var(--white); text-align: center;">
+                    <div style="font-size: 13px; font-weight: 600;">8,000+ loyal customers who auto-reorder every month</div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">02 / 15</div>
+    </section>
+
+    <!-- SLIDE 3: SOCIAL MEDIA ADVANTAGE -->
+    <section class="slide" style="background: linear-gradient(145deg, var(--gray-900) 0%, var(--black) 100%); color: var(--white);">
+        <div class="logo-top"><img src="ThickFiber-logo-white (1).webp" alt="Thick Fiber"></div>
+        <p class="section-tag" style="color: var(--gray-500);">Our Unfair Advantage</p>
+        <h2 style="color: var(--white);">112M+ views. 1.1M+ followers. Built-in demand.</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px;">
+            <div style="padding: 40px 32px; background: rgba(255,255,255,0.03); border: 1px solid var(--gray-700); border-radius: 12px; text-align: center;">
+                <div style="font-size: 14px; font-weight: 600; color: var(--brand-red); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">YouTube</div>
+                <div style="font-size: 56px; font-weight: 800; color: var(--white); margin-bottom: 8px;">228K</div>
+                <div style="font-size: 13px; color: var(--gray-400); margin-bottom: 24px;">Subscribers</div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                    <div style="padding: 16px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--brand-red);">112M+</div>
+                        <div style="font-size: 9px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">Total Views</div>
+                    </div>
+                    <div style="padding: 16px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--white);">363</div>
+                        <div style="font-size: 9px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px;">Videos</div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 40px 32px; background: rgba(255,255,255,0.03); border: 1px solid var(--gray-700); border-radius: 12px; text-align: center;">
+                <div style="font-size: 14px; font-weight: 600; color: var(--brand-red); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">TikTok</div>
+                <div style="font-size: 56px; font-weight: 800; color: var(--white); margin-bottom: 8px;">850K</div>
+                <div style="font-size: 13px; color: var(--gray-400); margin-bottom: 24px;">Followers</div>
+                <div style="padding: 16px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                    <div style="font-size: 13px; color: var(--gray-300);">Viral content reaching millions of potential customers every month</div>
+                </div>
+            </div>
+            <div style="padding: 40px 32px; background: rgba(255,255,255,0.03); border: 1px solid var(--gray-700); border-radius: 12px; text-align: center;">
+                <div style="font-size: 14px; font-weight: 600; color: var(--brand-red); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Instagram</div>
+                <div style="font-size: 56px; font-weight: 800; color: var(--white); margin-bottom: 8px;">61K</div>
+                <div style="font-size: 13px; color: var(--gray-400); margin-bottom: 24px;">Followers</div>
+                <div style="padding: 16px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                    <div style="font-size: 13px; color: var(--gray-300);">Engaged community with thousands of educational posts</div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 32px; padding: 24px 32px; background: rgba(191,30,46,0.2); border: 1px solid var(--brand-red); border-radius: 8px; text-align: center;">
+            <span style="font-size: 17px; font-weight: 700; color: var(--white);">Your customers already know us. They're watching our videos and waiting to buy in-store.</span>
+        </div>
+        <div class="slide-number" style="color: var(--gray-600);">03 / 15</div>
+    </section>
+
+    <!-- SLIDE 4: PROBLEM -->
     <section class="slide">
         <div class="logo-top"><img src="thickfiber logo.png" alt="Thick Fiber"></div>
         <p class="section-tag">The Opportunity</p>
@@ -1294,7 +1420,7 @@
         <div style="margin-top: 40px; padding: 24px 32px; background: var(--gray-100); border-radius: 8px; border-left: 4px solid var(--brand-red);">
             <div style="font-size: 16px; font-weight: 600; color: var(--gray-900);">Every day, millions of customers walk past your beauty aisle looking for a solution that doesn't exist on your shelves.</div>
         </div>
-        <div class="slide-number">02 / 13</div>
+        <div class="slide-number">04 / 15</div>
     </section>
 
     <!-- SLIDE 3: MARKET -->
@@ -1338,7 +1464,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide-number" style="color: var(--gray-600);">03 / 13</div>
+        <div class="slide-number" style="color: var(--gray-600);">05 / 15</div>
     </section>
 
     <!-- SLIDE 4: TRACTION -->
@@ -1393,7 +1519,7 @@
         <div style="margin-top: 32px; padding: 20px 28px; background: var(--gray-100); border-radius: 8px; text-align: center;">
             <span style="font-size: 15px; font-weight: 600; color: var(--gray-700);">UAE customers are already buying online — imagine when they can buy in-store.</span>
         </div>
-        <div class="slide-number">04 / 13</div>
+        <div class="slide-number">06 / 15</div>
     </section>
 
     <!-- SLIDE 5: PRODUCTS -->
@@ -1475,7 +1601,7 @@
                 </div>
             </div>
         </div>
-        <div class="slide-number">05 / 13</div>
+        <div class="slide-number">07 / 15</div>
     </section>
 
     <!-- SLIDE 6: YOUR ROI -->
@@ -1503,7 +1629,7 @@
         <div style="margin-top: 40px; padding: 24px 32px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid var(--gray-700); text-align: center;">
             <span style="font-size: 17px; font-weight: 600; color: var(--white);">10 stores = AED 250,000+ annual profit. Zero risk. Guaranteed buyback on unsold stock.</span>
         </div>
-        <div class="slide-number" style="color: var(--gray-600);">06 / 13</div>
+        <div class="slide-number" style="color: var(--gray-600);">08 / 15</div>
     </section>
 
     <!-- SLIDE 7: RESULTS -->
@@ -1538,7 +1664,7 @@
         <div style="margin-top: 32px; padding: 24px 32px; background: var(--gray-100); border-radius: 8px;">
             <div style="font-size: 16px; font-weight: 600; color: var(--gray-700); text-align: center;">"30 seconds to confidence" — That's why 3,000+ customers gave us 5-star reviews and keep coming back every 30 days.</div>
         </div>
-        <div class="slide-number">07 / 13</div>
+        <div class="slide-number">09 / 15</div>
     </section>
 
     <!-- SLIDE 8: WHY US -->
@@ -1566,7 +1692,7 @@
         <div style="margin-top: 40px; padding: 24px 32px; background: rgba(191,30,46,0.2); border-radius: 8px; border: 1px solid var(--brand-red); text-align: center;">
             <span style="font-size: 17px; font-weight: 700; color: var(--white);">GUARANTEE: We'll buy back any unsold inventory. You have zero risk.</span>
         </div>
-        <div class="slide-number" style="color: var(--gray-600);">08 / 13</div>
+        <div class="slide-number" style="color: var(--gray-600);">10 / 15</div>
     </section>
 
     <!-- SLIDE 9: COMPETITION -->
@@ -1625,7 +1751,7 @@
         <div style="margin-top: 24px; text-align: center; font-size: 15px; font-weight: 600; color: var(--brand-red);">
             Be the first retailer in UAE to offer this category. Lock in exclusivity before competitors wake up.
         </div>
-        <div class="slide-number">09 / 13</div>
+        <div class="slide-number">11 / 15</div>
     </section>
 
     <!-- SLIDE 10: GLOBAL -->
@@ -1673,7 +1799,7 @@
         <div class="highlight-bar">
             Health & Glow (India's #1 beauty retailer) added us. Now selling 12,000 units/month in their stores.
         </div>
-        <div class="slide-number">10 / 13</div>
+        <div class="slide-number">12 / 15</div>
     </section>
 
     <!-- SLIDE 11: PARTNERSHIP -->
@@ -1708,7 +1834,7 @@
         <div style="margin-top: 24px; padding: 20px 28px; background: var(--gray-100); border-radius: 8px; border-left: 4px solid var(--brand-red);">
             <div style="font-size: 15px; font-weight: 600; color: var(--gray-800);">Bottom line: You provide shelf space. We provide product, marketing, training, and customers. You keep 30%.</div>
         </div>
-        <div class="slide-number">11 / 13</div>
+        <div class="slide-number">13 / 15</div>
     </section>
 
     <!-- SLIDE 12: ASK -->
@@ -1735,7 +1861,7 @@
         </div>
         <div style="margin-top: 32px; color: var(--gray-400); font-size: 14px; font-weight: 500;">We're currently in talks with Carrefour, Lulu & Watsons. Exclusive partnerships available.</div>
         <a href="https://www.thickfiber.ae/pages/contact" class="cta-button">Let's Talk This Week</a>
-        <div class="slide-number" style="color: var(--gray-600);">12 / 13</div>
+        <div class="slide-number" style="color: var(--gray-600);">14 / 15</div>
     </section>
 
     <!-- SLIDE 13: THANK YOU -->
@@ -1775,7 +1901,7 @@
             </div>
             <div class="contact-item">
                 <div class="contact-label">YouTube</div>
-                <a href="https://www.youtube.com/@ThickFiber" class="contact-value">220K+ Subscribers</a>
+                <a href="https://www.youtube.com/@ThickFiber" class="contact-value">228K Subs | 112M+ Views</a>
             </div>
             <div class="contact-item">
                 <div class="contact-label">TikTok</div>
@@ -1786,7 +1912,7 @@
                 <a href="https://www.instagram.com/thick.fiber" class="contact-value">61K+ Followers</a>
             </div>
         </div>
-        <div class="slide-number">13 / 13</div>
+        <div class="slide-number">15 / 15</div>
     </section>
 
 </body>
