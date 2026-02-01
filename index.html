@@ -835,14 +835,77 @@
             .results-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
-            .slide { padding: 40px 32px; }
-            .slide h2 { font-size: 32px; margin-bottom: 40px; }
-            .cover-headline { font-size: 36px; }
-            .grid-2, .partner-grid { grid-template-columns: 1fr; }
-            .market-data { grid-template-columns: 1fr; }
-            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+            .slide { padding: 100px 24px 60px 24px; }
+            .slide h2 { font-size: 26px; margin-bottom: 32px; letter-spacing: -0.5px; }
+            .section-tag { font-size: 10px; margin-bottom: 12px; }
+            .logo-top { top: 24px; left: 24px; height: 18px; }
+            .slide-number { bottom: 24px; right: 24px; font-size: 11px; }
+            .cover { padding-top: 80px; }
+            .cover-logo { height: 40px; margin-bottom: 32px; }
+            .cover h1 { font-size: 11px; letter-spacing: 2px; margin-bottom: 16px; }
+            .cover-headline { font-size: 28px; margin-bottom: 48px; letter-spacing: -1px; }
             .cover-metrics { grid-template-columns: repeat(2, 1fr); }
-            .contact-row { flex-direction: column; gap: 32px; }
+            .cover-metric { padding: 20px 16px; }
+            .cover-metric-value { font-size: 28px; }
+            .cover-metric-label { font-size: 9px; }
+            .data-grid { grid-template-columns: 1fr; gap: 16px; }
+            .data-card { padding: 24px; }
+            .data-value { font-size: 40px; }
+            .data-label { font-size: 13px; }
+            .grid-2, .grid-3, .partner-grid { grid-template-columns: 1fr; }
+            .market-data { grid-template-columns: 1fr; gap: 32px; }
+            .market-bar-track { height: 44px; }
+            .market-bar-fill { font-size: 13px; padding-left: 12px; }
+            .market-stat { padding: 20px; }
+            .market-stat-value { font-size: 28px; }
+            .traction-header { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .traction-card { padding: 20px 16px; }
+            .traction-value { font-size: 28px; }
+            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+            .kpi-item { padding: 20px 12px; }
+            .kpi-value { font-size: 20px; }
+            .product-card { padding: 24px; }
+            .product-header { flex-direction: column; gap: 20px; }
+            .product-header img { height: 120px; }
+            .product-price { font-size: 26px; }
+            .why-card { padding: 28px; }
+            .why-metric { font-size: 48px; }
+            .why-title { font-size: 16px; }
+            .why-desc { font-size: 13px; }
+            .results-grid { grid-template-columns: 1fr; }
+            .result-placeholder { height: 140px; }
+            .compare-table th, .compare-table td { padding: 12px 10px; font-size: 12px; }
+            .region-card { padding: 24px; }
+            .region-name { font-size: 16px; }
+            .region-revenue { font-size: 22px; }
+            .channel-tag { padding: 6px 10px; font-size: 9px; }
+            .partner-section { padding: 28px; }
+            .partner-title { font-size: 16px; margin-bottom: 20px; }
+            .partner-item { padding: 12px 14px; font-size: 13px; }
+            .ask-card { padding: 32px 24px; }
+            .ask-title { font-size: 18px; margin-bottom: 24px; }
+            .ask-item { gap: 14px; }
+            .ask-number { width: 36px; height: 36px; font-size: 14px; }
+            .ask-text { font-size: 15px; }
+            .cta-button { padding: 16px 32px; font-size: 12px; margin-top: 32px; }
+            .thankyou h2 { font-size: 36px; }
+            .summary-grid { grid-template-columns: repeat(2, 1fr); }
+            .summary-item { padding: 24px 16px; }
+            .summary-value { font-size: 24px; }
+            .contact-row { flex-direction: column; gap: 24px; }
+            .highlight-bar { padding: 20px 24px; font-size: 14px; }
+        }
+        @media (max-width: 480px) {
+            .slide { padding: 90px 20px 50px 20px; }
+            .slide h2 { font-size: 22px; }
+            .logo-top { top: 20px; left: 20px; height: 16px; }
+            .cover-headline { font-size: 24px; }
+            .cover-metrics { grid-template-columns: 1fr 1fr; }
+            .cover-metric-value { font-size: 24px; }
+            .data-value { font-size: 36px; }
+            .traction-header { grid-template-columns: 1fr; }
+            .kpi-grid { grid-template-columns: 1fr 1fr; }
+            .summary-grid { grid-template-columns: 1fr 1fr; }
         }
         @media print {
             .slide { page-break-after: always; }
