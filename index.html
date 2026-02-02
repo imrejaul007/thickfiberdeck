@@ -1459,49 +1459,89 @@
             /* ===== SLIDE 8: Products Grid - Mobile ===== */
             [style*="grid-template-columns: repeat(2, 1fr)"][style*="gap: 20px"][style*="margin-top: 28px"] {
                 grid-template-columns: 1fr !important;
-                gap: 16px !important;
+                gap: 12px !important;
             }
-            /* Product cards - stack vertically */
+            /* Product cards - horizontal layout (image left, details right) */
             [style*="border-radius: 16px"][style*="display: flex"][style*="box-shadow: 0 8px 32px"] {
-                flex-direction: column !important;
+                flex-direction: row !important;
+                border-radius: 12px !important;
+                min-height: 140px !important;
             }
-            /* Product image container */
+            /* Product image container - left side */
             [style*="min-width: 140px"][style*="padding: 20px"][style*="text-align: center"] {
-                min-width: auto !important;
-                padding: 16px !important;
-                width: 100% !important;
+                min-width: 130px !important;
+                width: 130px !important;
+                padding: 10px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
             }
-            /* Product image */
+            /* Product image - larger */
             [style*="height: 120px"][style*="object-fit: contain"] {
-                height: 100px !important;
+                height: 110px !important;
+                width: 110px !important;
+                object-fit: contain !important;
             }
-            /* Product content area */
+            /* Product badges */
+            [style*="position: absolute"][style*="top: 12px"][style*="left: 12px"][style*="padding: 3px 8px"] {
+                top: 6px !important;
+                left: 6px !important;
+                padding: 2px 5px !important;
+                font-size: 7px !important;
+            }
+            /* Product content area - right side */
             [style*="padding: 20px"][style*="flex: 1"] {
-                padding: 16px !important;
+                padding: 10px 12px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
             }
             /* Product title */
             [style*="font-size: 16px"][style*="font-weight: 700"][style*="margin-bottom: 4px"] {
-                font-size: 15px !important;
+                font-size: 13px !important;
+                margin-bottom: 2px !important;
+            }
+            /* Product description */
+            [style*="font-size: 11px"][style*="color: var(--gray-500)"][style*="margin-bottom: 12px"] {
+                font-size: 9px !important;
+                margin-bottom: 6px !important;
+                line-height: 1.2 !important;
             }
             /* Product price */
             [style*="font-size: 24px"][style*="font-weight: 800"][style*="color: var(--brand-red)"] {
-                font-size: 20px !important;
+                font-size: 18px !important;
+            }
+            /* Price row */
+            [style*="display: flex"][style*="align-items: baseline"][style*="margin-bottom: 12px"] {
+                margin-bottom: 6px !important;
             }
             /* Product stats row */
-            [style*="display: flex"][style*="gap: 8px"]:not([style*="align-items: baseline"]) {
-                gap: 6px !important;
+            [style*="display: flex"][style*="gap: 8px"]:not([style*="align-items: baseline"]):not([style*="justify-content"]) {
+                gap: 4px !important;
             }
             [style*="padding: 8px 12px"][style*="border-radius: 6px"] {
-                padding: 6px 10px !important;
+                padding: 4px 8px !important;
+            }
+            [style*="padding: 8px 12px"][style*="border-radius: 6px"] > div:first-child {
+                font-size: 11px !important;
+            }
+            [style*="padding: 8px 12px"][style*="border-radius: 6px"] > div:last-child {
+                font-size: 6px !important;
             }
             /* Products bottom stats */
             [style*="margin-top: 24px"][style*="display: flex"][style*="justify-content: center"][style*="gap: 32px"] {
                 flex-wrap: wrap !important;
-                gap: 10px !important;
-                margin-top: 16px !important;
+                gap: 8px !important;
+                margin-top: 12px !important;
             }
             [style*="padding: 14px 24px"][style*="border: 1px solid var(--gray-200)"][style*="border-radius: 10px"] {
-                padding: 10px 16px !important;
+                padding: 8px 12px !important;
+            }
+            [style*="padding: 14px 24px"][style*="border: 1px solid var(--gray-200)"] span:first-child {
+                font-size: 16px !important;
+            }
+            [style*="padding: 14px 24px"][style*="border: 1px solid var(--gray-200)"] span:last-child {
+                font-size: 11px !important;
             }
 
             /* ===== SLIDE 11: Zero Risk Metrics ===== */
