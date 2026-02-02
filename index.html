@@ -1342,6 +1342,22 @@
             .thankyou [style*="grid-template-columns: repeat(4, 1fr)"] > a > div:last-child {
                 font-size: 12px !important;
             }
+            /* Thank you social links - 6 columns to 3x2 */
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 8px !important;
+                margin-bottom: 20px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] > a {
+                padding: 12px 6px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] > a > div:first-child {
+                font-size: 7px !important;
+                margin-bottom: 3px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] > a > div:last-child {
+                font-size: 10px !important;
+            }
             /* Thank you total reach badge */
             .thankyou [style*="display: inline-flex"] {
                 flex-wrap: wrap !important;
@@ -1670,6 +1686,19 @@
             .thankyou [style*="grid-template-columns: repeat(4, 1fr)"] {
                 grid-template-columns: 1fr 1fr !important;
                 gap: 8px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 6px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] > a {
+                padding: 10px 4px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] > a > div:first-child {
+                font-size: 6px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] > a > div:last-child {
+                font-size: 9px !important;
             }
             .thankyou [style*="display: inline-flex"] {
                 flex-direction: column !important;
@@ -2737,26 +2766,30 @@
             </div>
 
             <!-- Social/Contact Links -->
-            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 28px;">
-                <a href="https://www.thickfiber.ae" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 16px 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
-                    <div style="font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gray-500); margin-bottom: 6px;">Website</div>
-                    <div style="font-size: 13px; font-weight: 700; color: var(--white);">thickfiber.ae</div>
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 28px;">
+                <a href="https://www.thickfiber.ae" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 14px 8px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
+                    <div style="font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-500); margin-bottom: 5px;">Website</div>
+                    <div style="font-size: 11px; font-weight: 700; color: var(--white);">thickfiber.ae</div>
                 </a>
-                <a href="https://www.noon.com/uae-en/~thickfiber/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 16px 12px; background: linear-gradient(145deg, rgba(255,237,0,0.1) 0%, rgba(255,237,0,0.02) 100%); border: 1px solid rgba(255,237,0,0.2); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
-                    <div style="font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #FFED00; margin-bottom: 6px;">Noon</div>
-                    <div style="font-size: 13px; font-weight: 700; color: var(--white);">Shop Now</div>
+                <a href="https://www.amazon.ae/stores/THICKFIBER/page/5CF2D42C-4582-4C11-8637-0E6AF8FB8A84" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 14px 8px; background: linear-gradient(145deg, rgba(255,153,0,0.1) 0%, rgba(255,153,0,0.02) 100%); border: 1px solid rgba(255,153,0,0.2); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
+                    <div style="font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #FF9900; margin-bottom: 5px;">Amazon</div>
+                    <div style="font-size: 11px; font-weight: 700; color: var(--white);">Shop Now</div>
                 </a>
-                <a href="https://www.youtube.com/@ThickFiber" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 16px 12px; background: linear-gradient(145deg, rgba(255,0,0,0.08) 0%, rgba(255,0,0,0.02) 100%); border: 1px solid rgba(255,0,0,0.15); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
-                    <div style="font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #FF4444; margin-bottom: 6px;">YouTube</div>
-                    <div style="font-size: 13px; font-weight: 700; color: var(--white);">228K Subs</div>
+                <a href="https://www.noon.com/uae-en/~thickfiber/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 14px 8px; background: linear-gradient(145deg, rgba(255,237,0,0.1) 0%, rgba(255,237,0,0.02) 100%); border: 1px solid rgba(255,237,0,0.2); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
+                    <div style="font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #FFED00; margin-bottom: 5px;">Noon</div>
+                    <div style="font-size: 11px; font-weight: 700; color: var(--white);">Shop Now</div>
                 </a>
-                <a href="https://www.tiktok.com/@thick.fiber" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 16px 12px; background: linear-gradient(145deg, rgba(0,242,234,0.08) 0%, rgba(255,0,80,0.05) 100%); border: 1px solid rgba(0,242,234,0.15); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
-                    <div style="font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #00f2ea; margin-bottom: 6px;">TikTok</div>
-                    <div style="font-size: 13px; font-weight: 700; color: var(--white);">864K</div>
+                <a href="https://www.youtube.com/@ThickFiber" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 14px 8px; background: linear-gradient(145deg, rgba(255,0,0,0.08) 0%, rgba(255,0,0,0.02) 100%); border: 1px solid rgba(255,0,0,0.15); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
+                    <div style="font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #FF4444; margin-bottom: 5px;">YouTube</div>
+                    <div style="font-size: 11px; font-weight: 700; color: var(--white);">228K Subs</div>
                 </a>
-                <a href="https://www.instagram.com/thick.fiber/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 16px 12px; background: linear-gradient(145deg, rgba(225,48,108,0.08) 0%, rgba(131,58,180,0.05) 100%); border: 1px solid rgba(225,48,108,0.15); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
-                    <div style="font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #E1306C; margin-bottom: 6px;">Instagram</div>
-                    <div style="font-size: 13px; font-weight: 700; color: var(--white);">95K</div>
+                <a href="https://www.tiktok.com/@thick.fiber" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 14px 8px; background: linear-gradient(145deg, rgba(0,242,234,0.08) 0%, rgba(255,0,80,0.05) 100%); border: 1px solid rgba(0,242,234,0.15); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
+                    <div style="font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #00f2ea; margin-bottom: 5px;">TikTok</div>
+                    <div style="font-size: 11px; font-weight: 700; color: var(--white);">864K</div>
+                </a>
+                <a href="https://www.instagram.com/thick.fiber/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; padding: 14px 8px; background: linear-gradient(145deg, rgba(225,48,108,0.08) 0%, rgba(131,58,180,0.05) 100%); border: 1px solid rgba(225,48,108,0.15); border-radius: 12px; text-align: center; transition: all 0.2s ease;">
+                    <div style="font-size: 7px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #E1306C; margin-bottom: 5px;">Instagram</div>
+                    <div style="font-size: 11px; font-weight: 700; color: var(--white);">95K</div>
                 </a>
             </div>
 
