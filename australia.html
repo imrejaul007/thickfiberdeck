@@ -345,6 +345,81 @@
             [style*="padding: 24px 20px"] {
                 padding: 16px 14px !important;
             }
+            [style*="padding: 28px 32px"] {
+                padding: 20px !important;
+            }
+            [style*="padding: 24px 32px"] {
+                padding: 16px 20px !important;
+            }
+            /* Who We Are slide - 2 column to 1 column */
+            [style*="grid-template-columns: 1.1fr 0.9fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 24px !important;
+            }
+            /* Social stats hero - flex to column */
+            [style*="display: flex"][style*="justify-content: center"][style*="gap: 48px"] {
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 20px !important;
+            }
+            [style*="font-size: 72px"] {
+                font-size: 40px !important;
+            }
+            /* ROI slide - 5 column to stacked */
+            [style*="grid-template-columns: 1fr auto 1fr auto 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            [style*="grid-template-columns: 1fr auto 1fr auto 1fr"] > div[style*="font-size: 32px"] {
+                display: none !important;
+            }
+            /* Product cards - horizontal to vertical on very small */
+            [style*="display: flex"][style*="border-radius: 16px"][style*="box-shadow"] {
+                flex-direction: row !important;
+            }
+            [style*="min-width: 140px"][style*="padding: 20px"] {
+                min-width: 120px !important;
+                padding: 16px !important;
+            }
+            [style*="min-width: 140px"] img[style*="height: 120px"] {
+                height: 100px !important;
+            }
+            /* Salon benefits - 3 columns to 1 */
+            [style*="grid-template-columns: repeat(3, 1fr)"][style*="gap: 24px"] {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            /* Partnership grid - 2 to 1 */
+            [style*="grid-template-columns: 1fr 1fr"][style*="gap: 32px"] {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            [style*="grid-template-columns: 1fr 1fr"][style*="gap: 24px"] {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+            }
+            /* Key benefits flex row */
+            [style*="display: flex"][style*="justify-content: center"][style*="gap: 24px"][style*="padding: 24px 32px"] {
+                flex-wrap: wrap !important;
+                gap: 16px !important;
+                padding: 16px !important;
+            }
+            /* Getting started steps - flex wrap */
+            [style*="display: flex"][style*="justify-content: center"][style*="gap: 32px"]:not([style*="48px"]) {
+                flex-wrap: wrap !important;
+                gap: 12px !important;
+            }
+            /* CTA buttons */
+            a[style*="padding: 20px 48px"] {
+                padding: 16px 32px !important;
+                font-size: 14px !important;
+            }
+            /* Hide vertical dividers on mobile */
+            [style*="width: 1px"][style*="height: 40px"],
+            [style*="width: 1px"][style*="height: 50px"],
+            [style*="width: 1px"][style*="background: var(--gray-700)"] {
+                display: none !important;
+            }
             .thankyou {
                 padding: 60px 16px 40px 16px !important;
             }
@@ -395,6 +470,39 @@
                 padding: 12px 16px !important;
                 gap: 8px !important;
             }
+            /* Thank you - 3 column key offers to stacked */
+            .thankyou [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+                gap: 2px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(3, 1fr)"] > div {
+                padding: 16px 12px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(3, 1fr)"] > div > div:first-child {
+                font-size: 24px !important;
+            }
+            /* Thank you CTA box */
+            .thankyou [style*="padding: 24px 48px"] {
+                padding: 18px 20px !important;
+                margin-bottom: 24px !important;
+            }
+            .thankyou [style*="padding: 24px 48px"] span {
+                font-size: 14px !important;
+            }
+            /* Thank you social links - 5 columns to 2+3 */
+            .thankyou [style*="grid-template-columns: repeat(5, 1fr)"][style*="gap: 10px"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 8px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(5, 1fr)"][style*="gap: 10px"] > a {
+                padding: 12px 6px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(5, 1fr)"][style*="gap: 10px"] > a > div:first-child {
+                font-size: 7px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(5, 1fr)"][style*="gap: 10px"] > a > div:last-child {
+                font-size: 10px !important;
+            }
         }
         @media (max-width: 400px) {
             .cover-metrics {
@@ -403,6 +511,42 @@
             .thankyou [style*="grid-template-columns: repeat(6, 1fr)"] {
                 grid-template-columns: repeat(2, 1fr) !important;
                 gap: 6px !important;
+            }
+            .thankyou [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr 1fr !important;
+            }
+            /* Extra small - font sizes */
+            [style*="font-size: 72px"] {
+                font-size: 32px !important;
+            }
+            [style*="font-size: 56px"] {
+                font-size: 28px !important;
+            }
+            [style*="font-size: 52px"] {
+                font-size: 26px !important;
+            }
+            [style*="font-size: 44px"] {
+                font-size: 24px !important;
+            }
+            /* Extra small - product cards vertical */
+            [style*="display: flex"][style*="border-radius: 16px"][style*="box-shadow"] {
+                flex-direction: column !important;
+            }
+            [style*="min-width: 140px"][style*="padding: 20px"],
+            [style*="min-width: 120px"] {
+                min-width: auto !important;
+                width: 100% !important;
+            }
+            /* Extra small - 4 column grid to 1 */
+            [style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: 1fr 1fr !important;
+            }
+            /* Extra small - opportunity stats */
+            [style*="grid-template-columns: repeat(4, 1fr)"][style*="margin-top: 32px"] > div {
+                padding: 20px 12px !important;
+            }
+            [style*="font-size: 52px"] {
+                font-size: 28px !important;
             }
         }
         @media print {
