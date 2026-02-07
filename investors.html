@@ -201,16 +201,106 @@
                 clip-path: none !important;
                 border-radius: 12px !important;
             }
+            /* 6 column grids (revenue distribution) */
+            [style*="grid-template-columns: repeat(6, 1fr)"] {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 12px !important;
+            }
+            /* 5 column cover metrics */
+            [style*="grid-template-columns: repeat(5, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 2px !important;
+            }
+            /* Competitive table - make scrollable */
+            table {
+                display: block !important;
+                overflow-x: auto !important;
+                white-space: nowrap !important;
+                font-size: 11px !important;
+            }
+            table th, table td {
+                padding: 10px 8px !important;
+                font-size: 10px !important;
+            }
+            /* TAM SAM SOM - hide circles on mobile, show list */
+            [style*="min-height: 320px"] {
+                min-height: auto !important;
+                display: none !important;
+            }
+            /* Flex direction column for side-by-side layouts */
+            [style*="display: flex"][style*="align-items: center"][style*="gap: 24px"] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 16px !important;
+            }
+            /* Funnel width fix */
+            [style*="display: flex"][style*="flex-direction: column"][style*="gap: 8px"] > div {
+                width: 100% !important;
+            }
+            /* Rating bars */
+            [style*="display: flex"][style*="align-items: center"][style*="gap: 8px"][style*="margin-bottom: 8px"] {
+                gap: 6px !important;
+            }
+            /* Social links row */
+            [style*="display: flex"][style*="justify-content: center"][style*="gap: 16px"] {
+                flex-wrap: wrap !important;
+                gap: 8px !important;
+            }
+            [style*="display: flex"][style*="justify-content: center"][style*="gap: 16px"] > a {
+                padding: 10px 14px !important;
+                font-size: 11px !important;
+            }
+            /* Cover headline */
+            h1[style*="font-size: 52px"] {
+                font-size: 28px !important;
+                line-height: 1.2 !important;
+            }
+            /* Growth levers list */
+            [style*="display: flex"][style*="align-items: flex-start"][style*="gap: 16px"] {
+                gap: 12px !important;
+            }
+            [style*="display: flex"][style*="align-items: flex-start"][style*="gap: 16px"] > div:first-child {
+                width: 28px !important;
+                height: 28px !important;
+                flex-shrink: 0 !important;
+            }
+            /* Contact box */
+            [style*="padding: 24px 40px"] {
+                padding: 16px 24px !important;
+            }
+            /* Market opportunity - show SAM/TAM list properly */
+            [style*="display: flex"][style*="align-items: center"][style*="gap: 16px"][style*="padding: 20px"] {
+                flex-direction: row !important;
+                gap: 12px !important;
+            }
+            [style*="display: flex"][style*="align-items: center"][style*="gap: 16px"][style*="padding: 20px"] > div:first-child {
+                width: 12px !important;
+                height: 12px !important;
+                flex-shrink: 0 !important;
+            }
         }
         @media (max-width: 400px) {
             [style*="grid-template-columns: repeat(4, 1fr)"] {
                 grid-template-columns: 1fr 1fr !important;
             }
+            [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
             [style*="grid-template-columns: repeat(2, 1fr)"] {
                 grid-template-columns: 1fr !important;
             }
+            [style*="grid-template-columns: repeat(6, 1fr)"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
             .cover-metrics {
                 grid-template-columns: 1fr 1fr !important;
+            }
+            h1[style*="font-size: 52px"] {
+                font-size: 24px !important;
+            }
+            table th, table td {
+                padding: 8px 6px !important;
+                font-size: 9px !important;
             }
         }
     </style>
