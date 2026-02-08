@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thick Fiber - Company Structure & Investment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-red: #bf1e2e;
+            --brand-red-dark: #9a1824;
+            --black: #0a0a0a;
+            --gray-900: #171717;
+            --gray-800: #262626;
+            --gray-700: #404040;
+            --gray-600: #525252;
+            --gray-500: #737373;
+            --gray-400: #a3a3a3;
+            --gray-300: #d4d4d4;
+            --gray-200: #e5e5e5;
+            --gray-100: #f5f5f5;
+            --gray-50: #fafafa;
+            --white: #ffffff;
+            --green: #22C55E;
+            --blue: #3B82F6;
+            --purple: #8B5CF6;
+            --orange: #F59E0B;
+            --uae-green: #00732F;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gray-100);
+            color: var(--gray-900);
+            line-height: 1.6;
+        }
+
+        .slide {
+            min-height: 100vh;
+            padding: 60px 80px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo-top {
+            position: absolute;
+            top: 32px;
+            left: 40px;
+        }
+
+        .logo-top img {
+            height: 32px;
+        }
+
+        .section-tag {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--brand-red);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 42px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 40px;
+            color: var(--gray-900);
+        }
+
+        h2 span {
+            color: var(--brand-red);
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 32px;
+            right: 40px;
+            font-size: 12px;
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+
+        .data-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                padding: 80px 24px 60px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            .logo-top {
+                left: 24px;
+            }
+            [style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+            [style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: 1fr 1fr !important;
+            }
+            [style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+            .structure-diagram {
+                flex-direction: column !important;
+            }
+            .structure-diagram > div {
+                width: 100% !important;
+            }
+            h1[style*="font-size: 52px"] {
+                font-size: 28px !important;
+            }
+        }
+
+        @media (max-width: 400px) {
+            [style*="grid-template-columns: repeat(4, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: COVER -->
+    <section class="slide" style="background: linear-gradient(145deg, var(--gray-900) 0%, var(--black) 100%); color: var(--white); text-align: center; align-items: center;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('images/page1_img1.jpeg') center center / cover no-repeat; opacity: 0.1;"></div>
+
+        <div style="position: relative; z-index: 1;">
+            <img src="ThickFiber-logo-white (1).webp" alt="Thick Fiber" style="height: 56px; margin-bottom: 32px;">
+
+            <div style="font-size: 14px; font-weight: 600; color: var(--gray-400); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px;">Investment Opportunity</div>
+
+            <h1 style="font-size: 52px; font-weight: 800; letter-spacing: -2px; margin-bottom: 16px;">Company Structure &<br><span style="color: var(--brand-red);">Growth Capital</span></h1>
+
+            <p style="font-size: 18px; color: var(--gray-400); margin-bottom: 48px;">Raising $2M-$5M to dominate the US market</p>
+
+            <!-- Key Stats -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: rgba(255,255,255,0.1); border-radius: 16px; overflow: hidden; max-width: 800px; margin: 0 auto;">
+                <div style="padding: 24px 16px; background: rgba(255,255,255,0.03); text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: var(--green);">$8M</div>
+                    <div style="font-size: 10px; color: var(--gray-400); text-transform: uppercase; margin-top: 4px;">2025 Revenue</div>
+                </div>
+                <div style="padding: 24px 16px; background: rgba(255,255,255,0.03); text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: var(--purple);">$15M</div>
+                    <div style="font-size: 10px; color: var(--gray-400); text-transform: uppercase; margin-top: 4px;">2026 Target</div>
+                </div>
+                <div style="padding: 24px 16px; background: rgba(255,255,255,0.03); text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: var(--white);">7</div>
+                    <div style="font-size: 10px; color: var(--gray-400); text-transform: uppercase; margin-top: 4px;">Countries</div>
+                </div>
+                <div style="padding: 24px 16px; background: rgba(255,255,255,0.03); text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: var(--brand-red);">45%</div>
+                    <div style="font-size: 10px; color: var(--gray-400); text-transform: uppercase; margin-top: 4px;">USA Revenue</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-number" style="color: var(--gray-600);">01 / 05</div>
+    </section>
+
+    <!-- SLIDE 2: CORPORATE STRUCTURE -->
+    <section class="slide" style="background: var(--white);">
+        <div class="logo-top"><img src="thickfiber logo.png" alt="Thick Fiber"></div>
+        <p class="section-tag">Corporate Structure</p>
+        <h2>UAE Holding Company. <span>Global Licensing Model.</span></h2>
+
+        <!-- Structure Diagram -->
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <!-- Parent Company -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <div style="display: inline-block; padding: 32px 48px; background: linear-gradient(145deg, var(--uae-green) 0%, #005a25 100%); border-radius: 16px; color: white;">
+                    <div style="font-size: 12px; opacity: 0.8; margin-bottom: 4px;">PARENT COMPANY</div>
+                    <div style="font-size: 28px; font-weight: 800;">Thick Fiber LLC</div>
+                    <div style="font-size: 14px; opacity: 0.9; margin-top: 8px;">United Arab Emirates</div>
+                    <div style="margin-top: 16px; padding: 8px 16px; background: rgba(255,255,255,0.2); border-radius: 8px; font-size: 12px;">
+                        Brand Owner | IP Holder | Investment Entity
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connection Lines -->
+            <div style="text-align: center; margin-bottom: 24px;">
+                <div style="width: 2px; height: 40px; background: var(--gray-300); margin: 0 auto;"></div>
+                <div style="font-size: 12px; color: var(--gray-500); padding: 8px 16px; background: var(--gray-100); border-radius: 20px; display: inline-block;">Exclusive Regional Licenses</div>
+                <div style="width: 2px; height: 40px; background: var(--gray-300); margin: 0 auto;"></div>
+            </div>
+
+            <!-- Regional Partners -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 32px;">
+                <!-- USA -->
+                <div style="padding: 24px; background: var(--gray-50); border-radius: 16px; border: 2px solid var(--blue); text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 8px;">🇺🇸</div>
+                    <div style="font-size: 18px; font-weight: 700; color: var(--gray-900);">USA Partner</div>
+                    <div style="font-size: 13px; color: var(--gray-500); margin: 8px 0;">Exclusive US Rights</div>
+                    <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px;">
+                        <span style="padding: 4px 10px; background: var(--blue); color: white; border-radius: 12px; font-size: 11px; font-weight: 600;">50% Profit Share</span>
+                    </div>
+                    <div style="font-size: 20px; font-weight: 800; color: var(--green); margin-top: 16px;">$3.6M</div>
+                    <div style="font-size: 11px; color: var(--gray-500);">2025 Revenue</div>
+                </div>
+
+                <!-- UK -->
+                <div style="padding: 24px; background: var(--gray-50); border-radius: 16px; border: 2px solid var(--purple); text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 8px;">🇬🇧</div>
+                    <div style="font-size: 18px; font-weight: 700; color: var(--gray-900);">UK Partner</div>
+                    <div style="font-size: 13px; color: var(--gray-500); margin: 8px 0;">Exclusive UK Rights</div>
+                    <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px;">
+                        <span style="padding: 4px 10px; background: var(--purple); color: white; border-radius: 12px; font-size: 11px; font-weight: 600;">50% Profit Share</span>
+                    </div>
+                    <div style="font-size: 20px; font-weight: 800; color: var(--green); margin-top: 16px;">$1.65M</div>
+                    <div style="font-size: 11px; color: var(--gray-500);">2025 Revenue</div>
+                </div>
+
+                <!-- India -->
+                <div style="padding: 24px; background: var(--gray-50); border-radius: 16px; border: 2px solid var(--orange); text-align: center;">
+                    <div style="font-size: 32px; margin-bottom: 8px;">🇮🇳</div>
+                    <div style="font-size: 18px; font-weight: 700; color: var(--gray-900);">India Partner</div>
+                    <div style="font-size: 13px; color: var(--gray-500); margin: 8px 0;">Exclusive India Rights</div>
+                    <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px;">
+                        <span style="padding: 4px 10px; background: var(--orange); color: white; border-radius: 12px; font-size: 11px; font-weight: 600;">50% Profit Share</span>
+                    </div>
+                    <div style="font-size: 20px; font-weight: 800; color: var(--green); margin-top: 16px;">$1.9M</div>
+                    <div style="font-size: 11px; color: var(--gray-500);">2025 Revenue</div>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+                <!-- Canada -->
+                <div style="padding: 20px; background: var(--gray-50); border-radius: 12px; border: 1px solid var(--gray-200); text-align: center;">
+                    <div style="font-size: 24px; margin-bottom: 6px;">🇨🇦</div>
+                    <div style="font-size: 14px; font-weight: 600;">Canada</div>
+                    <div style="font-size: 11px; color: var(--gray-500);">50% Profit Share</div>
+                    <div style="font-size: 16px; font-weight: 700; color: var(--green); margin-top: 8px;">$74K</div>
+                </div>
+
+                <!-- Australia -->
+                <div style="padding: 20px; background: var(--gray-50); border-radius: 12px; border: 1px solid var(--gray-200); text-align: center;">
+                    <div style="font-size: 24px; margin-bottom: 6px;">🇦🇺</div>
+                    <div style="font-size: 14px; font-weight: 600;">Australia</div>
+                    <div style="font-size: 11px; color: var(--gray-500);">50% Profit Share</div>
+                    <div style="font-size: 16px; font-weight: 700; color: var(--green); margin-top: 8px;">$264K</div>
+                </div>
+
+                <!-- Europe -->
+                <div style="padding: 20px; background: var(--gray-50); border-radius: 12px; border: 1px solid var(--gray-200); text-align: center;">
+                    <div style="font-size: 24px; margin-bottom: 6px;">🇪🇺</div>
+                    <div style="font-size: 14px; font-weight: 600;">Europe</div>
+                    <div style="font-size: 11px; color: var(--gray-500);">Launching</div>
+                    <div style="font-size: 16px; font-weight: 700; color: var(--green); margin-top: 8px;">$86K</div>
+                </div>
+
+                <!-- UAE (Direct) -->
+                <div style="padding: 20px; background: linear-gradient(145deg, rgba(0,115,47,0.1) 0%, rgba(0,115,47,0.05) 100%); border-radius: 12px; border: 1px solid var(--uae-green); text-align: center;">
+                    <div style="font-size: 24px; margin-bottom: 6px;">🇦🇪</div>
+                    <div style="font-size: 14px; font-weight: 600;">UAE</div>
+                    <div style="font-size: 11px; color: var(--uae-green);">Direct Operations</div>
+                    <div style="font-size: 16px; font-weight: 700; color: var(--green); margin-top: 8px;">$327K</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-number">02 / 05</div>
+    </section>
+
+    <!-- SLIDE 3: REVENUE MODEL -->
+    <section class="slide" style="background: var(--gray-50);">
+        <div class="logo-top"><img src="thickfiber logo.png" alt="Thick Fiber"></div>
+        <p class="section-tag">Revenue Model</p>
+        <h2>Multiple Revenue Streams. <span>Aligned Incentives.</span></h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1000px;">
+            <!-- How It Works -->
+            <div class="data-card">
+                <div style="font-size: 16px; font-weight: 700; margin-bottom: 24px; color: var(--gray-900);">How the Model Works</div>
+
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; align-items: flex-start; gap: 16px;">
+                        <div style="width: 32px; height: 32px; background: var(--blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; flex-shrink: 0;">1</div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--gray-900);">Regional Partner Operates</div>
+                            <div style="font-size: 13px; color: var(--gray-500);">Local founder runs all operations, marketing, fulfillment in their exclusive territory</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: flex-start; gap: 16px;">
+                        <div style="width: 32px; height: 32px; background: var(--purple); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; flex-shrink: 0;">2</div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--gray-900);">50% Profit Share</div>
+                            <div style="font-size: 13px; color: var(--gray-500);">Net profits split equally between UAE parent and regional partner</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: flex-start; gap: 16px;">
+                        <div style="width: 32px; height: 32px; background: var(--green); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; flex-shrink: 0;">3</div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--gray-900);">Consultancy Fees</div>
+                            <div style="font-size: 13px; color: var(--gray-500);">Founder provides strategic guidance, content strategy, and brand direction to each region</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue to UAE Parent -->
+            <div class="data-card" style="background: linear-gradient(145deg, var(--gray-900) 0%, var(--black) 100%); color: white;">
+                <div style="font-size: 16px; font-weight: 700; margin-bottom: 24px; color: var(--gray-400);">UAE Parent Revenue Streams</div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="padding: 16px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid var(--green);">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--green);">50%</div>
+                        <div style="font-size: 13px; color: var(--gray-400);">Profit share from all regional operations</div>
+                    </div>
+
+                    <div style="padding: 16px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid var(--blue);">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--blue);">100%</div>
+                        <div style="font-size: 13px; color: var(--gray-400);">UAE direct operations (no partner)</div>
+                    </div>
+
+                    <div style="padding: 16px; background: rgba(255,255,255,0.05); border-radius: 12px; border-left: 4px solid var(--purple);">
+                        <div style="font-size: 24px; font-weight: 800; color: var(--purple);">Fixed</div>
+                        <div style="font-size: 13px; color: var(--gray-400);">Consultancy fees from regional partners</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why This Works -->
+        <div style="margin-top: 32px; padding: 24px 32px; background: var(--white); border-radius: 16px; border-left: 4px solid var(--brand-red);">
+            <div style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Why This Model Works</div>
+            <div style="font-size: 14px; color: var(--gray-600);">
+                <strong>Asset-light expansion:</strong> Local partners bring capital, market knowledge, and operational expertise. UAE parent maintains brand control and IP while scaling globally without heavy capital expenditure. Partners are highly motivated as owner-operators.
+            </div>
+        </div>
+
+        <div class="slide-number">03 / 05</div>
+    </section>
+
+    <!-- SLIDE 4: INVESTMENT OPPORTUNITY -->
+    <section class="slide" style="background: linear-gradient(145deg, var(--gray-900) 0%, var(--black) 100%); color: var(--white);">
+        <div class="logo-top"><img src="ThickFiber-logo-white (1).webp" alt="Thick Fiber"></div>
+        <p class="section-tag" style="color: var(--gray-500);">Investment Opportunity</p>
+        <h2 style="color: var(--white);">Raising $2M-$5M. <span style="color: var(--green);">Double Down on USA.</span></h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+            <!-- The Ask -->
+            <div style="padding: 32px; background: rgba(255,255,255,0.05); border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
+                <div style="font-size: 14px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px;">The Ask</div>
+
+                <div style="font-size: 56px; font-weight: 800; color: var(--green); margin-bottom: 8px;">$2M-$5M</div>
+                <div style="font-size: 18px; color: var(--gray-400); margin-bottom: 32px;">Equity investment in Thick Fiber LLC (UAE)</div>
+
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 8px; height: 8px; background: var(--green); border-radius: 50%;"></div>
+                        <span style="color: var(--gray-300);">Direct equity stake in UAE parent company</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 8px; height: 8px; background: var(--green); border-radius: 50%;"></div>
+                        <span style="color: var(--gray-300);">Share in profits from ALL global markets</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 8px; height: 8px; background: var(--green); border-radius: 50%;"></div>
+                        <span style="color: var(--gray-300);">Brand equity and IP ownership</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use of Funds -->
+            <div style="padding: 32px; background: rgba(255,255,255,0.05); border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
+                <div style="font-size: 14px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px;">Use of Funds</div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <!-- Inventory -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: 600;">USA Inventory</span>
+                            <span style="color: var(--green); font-weight: 700;">50%</span>
+                        </div>
+                        <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                            <div style="width: 50%; height: 100%; background: var(--green); border-radius: 4px;"></div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--gray-500); margin-top: 4px;">Scale inventory to meet growing demand</div>
+                    </div>
+
+                    <!-- Marketing -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: 600;">USA Marketing</span>
+                            <span style="color: var(--blue); font-weight: 700;">35%</span>
+                        </div>
+                        <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                            <div style="width: 35%; height: 100%; background: var(--blue); border-radius: 4px;"></div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--gray-500); margin-top: 4px;">Paid ads, influencer partnerships, retail expansion</div>
+                    </div>
+
+                    <!-- Operations -->
+                    <div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: 600;">Operations & Team</span>
+                            <span style="color: var(--purple); font-weight: 700;">15%</span>
+                        </div>
+                        <div style="height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden;">
+                            <div style="width: 15%; height: 100%; background: var(--purple); border-radius: 4px;"></div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--gray-500); margin-top: 4px;">Hire key team members, improve fulfillment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why USA -->
+        <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;">
+            <div style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; text-align: center;">
+                <div style="font-size: 28px; font-weight: 800; color: var(--green);">$3.6M</div>
+                <div style="font-size: 11px; color: var(--gray-400); margin-top: 4px;">Current USA Revenue</div>
+            </div>
+            <div style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; text-align: center;">
+                <div style="font-size: 28px; font-weight: 800; color: var(--white);">45%</div>
+                <div style="font-size: 11px; color: var(--gray-400); margin-top: 4px;">of Total Revenue</div>
+            </div>
+            <div style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; text-align: center;">
+                <div style="font-size: 28px; font-weight: 800; color: var(--blue);">$2.8B</div>
+                <div style="font-size: 11px; color: var(--gray-400); margin-top: 4px;">US Hair Loss Market</div>
+            </div>
+            <div style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; text-align: center;">
+                <div style="font-size: 28px; font-weight: 800; color: var(--brand-red);">112%</div>
+                <div style="font-size: 11px; color: var(--gray-400); margin-top: 4px;">YoY USA Growth</div>
+            </div>
+        </div>
+
+        <div class="slide-number" style="color: var(--gray-600);">04 / 05</div>
+    </section>
+
+    <!-- SLIDE 5: CONTACT -->
+    <section class="slide" style="background: linear-gradient(145deg, var(--gray-900) 0%, var(--black) 100%); color: var(--white); text-align: center; align-items: center;">
+        <div style="position: relative; z-index: 1;">
+            <img src="ThickFiber-logo-white (1).webp" alt="Thick Fiber" style="height: 56px; margin-bottom: 32px;">
+
+            <h2 style="font-size: 48px; font-weight: 800; color: var(--white); margin-bottom: 16px;">Let's Build <span style="color: var(--brand-red);">Together</span></h2>
+            <p style="font-size: 18px; color: var(--gray-400); margin-bottom: 48px;">9 years of proof. Ready to scale the #1 hair fiber brand.</p>
+
+            <!-- Investment Summary -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: var(--green);">$2M-$5M</div>
+                    <div style="font-size: 11px; color: var(--gray-400);">Raising</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800;">Equity</div>
+                    <div style="font-size: 11px; color: var(--gray-400);">Investment Type</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 32px; font-weight: 800; color: var(--brand-red);">USA</div>
+                    <div style="font-size: 11px; color: var(--gray-400);">Focus Market</div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div style="padding: 24px 40px; background: rgba(255,255,255,0.05); border-radius: 16px; display: inline-block; margin-bottom: 32px;">
+                <div style="font-size: 14px; color: var(--gray-400); margin-bottom: 8px;">Contact</div>
+                <div style="font-size: 20px; font-weight: 700; color: var(--white);">hello@thickfiber.com</div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 16px;">
+                <a href="https://www.youtube.com/@ThickFiber" target="_blank" rel="noopener noreferrer" style="padding: 12px 20px; background: rgba(255,0,0,0.2); border: 1px solid rgba(255,0,0,0.3); border-radius: 8px; color: white; text-decoration: none; font-size: 13px; font-weight: 600;">YouTube</a>
+                <a href="https://www.instagram.com/thick.fiber/" target="_blank" rel="noopener noreferrer" style="padding: 12px 20px; background: rgba(225,48,108,0.2); border: 1px solid rgba(225,48,108,0.3); border-radius: 8px; color: white; text-decoration: none; font-size: 13px; font-weight: 600;">Instagram</a>
+                <a href="https://www.tiktok.com/@thick.fiber" target="_blank" rel="noopener noreferrer" style="padding: 12px 20px; background: rgba(0,242,234,0.2); border: 1px solid rgba(0,242,234,0.3); border-radius: 8px; color: white; text-decoration: none; font-size: 13px; font-weight: 600;">TikTok</a>
+                <a href="https://thickfiber.com" target="_blank" rel="noopener noreferrer" style="padding: 12px 20px; background: rgba(191,30,46,0.3); border: 1px solid var(--brand-red); border-radius: 8px; color: white; text-decoration: none; font-size: 13px; font-weight: 600;">Website</a>
+            </div>
+        </div>
+
+        <div class="slide-number" style="color: var(--gray-600);">05 / 05</div>
+    </section>
+
+</body>
+</html>
